@@ -24,5 +24,6 @@ $(document).ready ->
   $('#change_currency').click ->
     current = $("#currency").val()
     $("#currency").val($("#currency_destination").val())
-    $("#currency_destination").val(current).change ->
+    $("#currency_destination").val(current)
+    $('#change_currency').change ->
 rate()
