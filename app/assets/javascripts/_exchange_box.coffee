@@ -15,15 +15,18 @@ rate = ->
   return false;
 
 $(document).ready ->
-  $('#quantity').keyup ->
+  $('#quantity').'change keyup' ->
     rate()
+
   $('#currency').change ->
     rate()
+
   $('#currency_destination').change ->
     rate()
-  $('#change_currency').click ->
+
+
+  $('#change_currency').'click change' ->
     current = $("#currency").val()
     $("#currency").val($("#currency_destination").val())
     $("#currency_destination").val(current)
-    $('#change_currency').change ->
 rate()
