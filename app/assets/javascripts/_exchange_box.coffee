@@ -14,7 +14,6 @@ rate = ->
       $('#result').val(data.value)
   return false;
 
-
 $(document).ready ->
   $('#quantity').keyup ->
     rate()
@@ -25,5 +24,5 @@ $(document).ready ->
   $('#change_currency').click ->
     current = $("#currency").val()
     $("#currency").val($("#currency_destination").val())
-    $("#currency_destination").val(current)
+    $("#currency_destination").val(current).change ->
 rate()
