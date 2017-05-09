@@ -8,4 +8,5 @@ RSpec.describe 'Exchange Currency Process', type: :feature do
       select('USD', from: 'currency_destination')
       fill_in 'quantity', with: '10'
     end
+  end
 end
