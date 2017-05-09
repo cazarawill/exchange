@@ -25,7 +25,7 @@ $(document).ready ->
     rate()
 
 
-  $('#change_currency').on 'click change', ->
+  $('#change_currency').on 'change click', ->
     current = $("#currency").val()
     $("#currency").val($("#currency_destination").val())
     $("#currency_destination").val(current)
